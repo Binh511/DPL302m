@@ -10,14 +10,13 @@ import re
 import warnings
 
 import matplotlib.pyplot as plt
+import nltk
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn.feature_extraction.text import CountVectorizer
-import nltk
 from nltk.corpus import stopwords
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
@@ -25,6 +24,7 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.svm import LinearSVC
+
 warnings.filterwarnings("ignore")
 
 
@@ -626,7 +626,6 @@ if __name__ == "__main__":
 print("\n" + "=" * 60)
 print("🤖 MULTI-LABEL EMOTION CLASSIFICATION PIPELINE")
 print("=" * 60)
-
 
 
 # Ensure stopwords are downloaded

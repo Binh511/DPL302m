@@ -1,18 +1,24 @@
 # Core data science libraries
-pandas
-numpy
+pandas == 2.3.3
+numpy == 2.3.3
 
 # Machine learning
-scikit-learn
-scipy
-joblib
+scikit-learn == 1.7.2
+scipy == 1.16.2
+joblib == 1.5.2
 
 # Text processing / NLP
-nltk
+nltk == 3.9.2
 
 # Vectorization & plotting
-matplotlib
-seaborn
+matplotlib == 3.10.7
+seaborn == 0.13.2
+
+fastapi == 0.120.0
+uvicorn == 0.38.0
+python-multipart == 0.0.20
+
+
 
 
 

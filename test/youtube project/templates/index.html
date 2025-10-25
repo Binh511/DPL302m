@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Comment Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f7f7f7; }
+        .container { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 20px; border: none; background: #007bff; color: white; border-radius: 5px; cursor: pointer; }
+        .result { margin-top: 20px; background: #eef; padding: 10px; border-radius: 5px; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>🎬 YouTube Comment Sentiment Analyzer</h2>
+    <input id="ytLink" placeholder="Paste YouTube link here..." />
+    <button id="analyzeBtn">Analyze</button>
+
+    <div id="result" class="result"></div>
+</div>
+
+<!-- ✅ Chỉ giữ dòng này -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
