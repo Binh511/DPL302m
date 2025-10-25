@@ -384,37 +384,7 @@ def main():
     logger.info(f"Test F1: {test_f1:.4f}")
     logger.info(f"Model saved at: ./best_albert_single_label")
     logger.info("="*70)
-    
-    # Model comparison info
-    logger.info(f"\n{'='*70}")
-    logger.info("MODEL COMPARISON INFO")
-    logger.info(f"{'='*70}")
-    logger.info(f"ALBERT-base-v2 parameters: {total_params:,}")
-    logger.info(f"ALBERT-base-v2 test F1: {test_f1:.4f}")
-    logger.info("\nModel sizes for comparison:")
-    logger.info("  ALBERT-base-v2:  ~12M parameters (this model) ⭐")
-    logger.info("  DistilBERT:      ~66M parameters")
-    logger.info("  DeBERTa-v3-base: ~86M parameters")
-    logger.info("  BERT:            ~110M parameters")
-    logger.info("  RoBERTa:         ~125M parameters")
-    logger.info("\nALBERT key innovations:")
-    logger.info("  - Factorized embedding parameterization")
-    logger.info("  - Cross-layer parameter sharing")
-    logger.info("  - Inter-sentence coherence loss")
-    logger.info("  - 89% smaller than BERT with similar performance!")
-    logger.info("\nALBERT advantages:")
-    logger.info("  ✓ Smallest model (~12M params)")
-    logger.info("  ✓ Fastest training & inference")
-    logger.info("  ✓ Lower memory usage")
-    logger.info("  ✓ Great for deployment")
-    logger.info("\nCompare across all models:")
-    logger.info("  - Test F1 score (performance)")
-    logger.info("  - Training time per epoch")
-    logger.info("  - Inference speed")
-    logger.info("  - Model size vs performance trade-off")
-    logger.info("  - Memory usage")
-    logger.info("="*70)
-
 
 if __name__ == "__main__":
+
     main()
